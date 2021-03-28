@@ -1,0 +1,39 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    
+    <div class="form-content">
+       <form class="form" action="#" onsubmit="save()">
+           <div class="form-head">Login Form</div>
+            <div class="row-content">
+                <div class="img-content" style="width: 50%;">
+                    <img class="img" src="../assets/download.png" >
+                </div>
+                <div class="login-content">
+                    <div>
+                    <input class="input" type="text" id="username" name="username" placeholder="Username" required="">
+                    </div>
+                    <div>
+                    <input class="input" type="text" id="password" name="password" placeholder="Password" required="">
+                    <span>
+                        <i class="fas fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                    </span>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button type="submit" class="button" id="login" onclick="validate()">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+          
+        </form>
+        
+    </div>
+    <script src="../js/login.js"></script>
+</body></html>
